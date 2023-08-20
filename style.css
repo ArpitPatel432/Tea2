@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    margin-left: 1%;
+}
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+header h1::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-2px, 2px);
+    color: #555;
+    z-index: -1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+
+.a1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.a1 img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+
+.a2 {
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+
+.a2 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.a2 nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.a2 nav li {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.a2 nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.a2 nav a:hover {
+    color: #555;
+}
+.a3, .a4, .a5 {
+    padding: 2rem;
+}
+
+.a3 h3, .a4 h3, .a5 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.a3 p, .a4 p, .a5 p {
+    margin-bottom: 1rem;
+}
+
+.a3 img, .a4 img, .a5 img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .a1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .a1 img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
